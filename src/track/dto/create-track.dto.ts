@@ -1,4 +1,6 @@
 export class CreateTrackDto{
     readonly  name:string;
-    readonly audio:string;
+    readonly artist:string;
+    readonly text:string;
+    readonly userId:number;
 }
