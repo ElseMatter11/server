@@ -25,7 +25,7 @@ export class TrackService{
         return tracks;
         
     }
-    async getOne(id:number) : Promise<Track>{
+    async getOne(id:any) : Promise<Track>{
         const oneTrack= await this.trackRepository.findOne({where:{id}});
         return oneTrack
     }   

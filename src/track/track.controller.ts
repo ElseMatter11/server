@@ -24,7 +24,7 @@ export class TrackController{
     getAll(){
         return this.trackService.getAll();
     }
-    @Get('/id')
+    @Get(':id')
     getOne(@Param('id') id:number){
         return this.trackService.getOne(id)
     }
